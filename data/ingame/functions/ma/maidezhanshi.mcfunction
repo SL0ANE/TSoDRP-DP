@@ -1,0 +1,8 @@
+execute if score @s casting2 matches 18 run tag @s add 123
+execute if score @s casting2 matches 18 run tag @s[tag=!block] add addblock
+execute if score @s casting2 matches 18 run scoreboard players set @s blocktime 5
+execute if score @s casting2 matches 18 if entity @s[tag=!block] run particle minecraft:dust 0.8 0.3 0.1 1.6 ~ ~ ~ 0.3 0.3 0.3 0 30 force
+execute if score @s casting2 matches 18 if entity @s[tag=!block] run playsound minecraft:entity.zombie.attack_wooden_door block @a[tag=ingame] ~ ~ ~ 2 2 1
+execute if score @s casting2 matches 18 if entity @s[tag=!block] run tellraw @a[tag=ingame] [{"text":"▶▶▶","color":"green","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"    ","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"迈德战士","color":"yellow","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"hoverEvent":{"action":"show_text","value":"每当此随从受到伤害后，使其获得【格挡】。"}},{"text":"发动技能！","color":"white","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"目标：","color":"gray","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"selector":"@s","color":"yellow","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]
+execute if score @s casting2 matches 18 if entity @s[tag=!block] run scoreboard players set @s casting2 5
+tag @s remove 123

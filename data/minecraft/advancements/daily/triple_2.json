@@ -1,0 +1,24 @@
+{
+  "parent": "minecraft:daily/triple_1",
+  "display": {
+    "icon": {
+      "item": "minecraft:white_dye",
+      "nbt": "{CustomModelData:3}"
+    },
+    "title": {
+      "text":"鸿运当头I","color":"yellow","bold":"true"
+    },
+    "description": {
+      "text":"在老虎机赢得5次二等奖","color":"white"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "crafting_table": {
+      "trigger": "minecraft:impossible"
+      }
+    }
+}

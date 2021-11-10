@@ -1,0 +1,16 @@
+execute if score @s casting matches 10 run tag @s add 123
+execute if score @s casting matches 10 as @e[tag=mascot] if score @s ownedby = @e[tag=123,limit=1] ownedby run tag @s add targetmascot
+execute if score @s casting matches 10 run summon minecraft:armor_stand ~ ~ ~ {CustomName:"[{\"text\":\"点缀星云\",\"color\":\"white\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}]",Tags:["constellations","11","derive","card","summon","need_target","spell","s_minion","s_live"],Invisible:1,DisabledSlots:2039583,Rotation:[0f],Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f],LeftLeg:[0f,0f,0f],RightLeg:[0f,0f,0f]},Small:1b,Marker:1b,CustomNameVisible:0b,ArmorItems:[{},{},{},{id:"minecraft:gray_dye",Count:1b,tag:{CustomModelData:31110}}]}
+execute if score @s casting matches 10 run summon minecraft:armor_stand ~ ~ ~ {CustomName:"[{\"text\":\"点缀星云\",\"color\":\"white\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}]",Tags:["constellations","11","derive","card","summon","need_target","spell","s_minion","s_live"],Invisible:1,DisabledSlots:2039583,Rotation:[0f],Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f],LeftLeg:[0f,0f,0f],RightLeg:[0f,0f,0f]},Small:1b,Marker:1b,CustomNameVisible:0b,ArmorItems:[{},{},{},{id:"minecraft:gray_dye",Count:1b,tag:{CustomModelData:31110}}]}
+execute if score @s casting matches 10 run summon minecraft:armor_stand ~ ~ ~ {CustomName:"[{\"text\":\"点缀星云\",\"color\":\"white\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}]",Tags:["constellations","11","derive","card","summon","need_target","spell","s_minion","s_live"],Invisible:1,DisabledSlots:2039583,Rotation:[0f],Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f],LeftLeg:[0f,0f,0f],RightLeg:[0f,0f,0f]},Small:1b,Marker:1b,CustomNameVisible:0b,ArmorItems:[{},{},{},{id:"minecraft:gray_dye",Count:1b,tag:{CustomModelData:31110}}]}
+execute if score @s casting matches 10 run scoreboard players set @e[tag=summon] truecost 0
+execute if score @s casting matches 10 as @e[tag=summon] run function ingame:inserthand
+
+
+execute if score @s casting matches 10 run particle minecraft:dust 0.2 0.7 0.6 2 ~ ~0.2 ~ 0.2 0.2 0.2 0 30 force
+execute if score @s casting matches 10 run tellraw @a[tag=ingame] [{"text":"▶▶▶","color":"green","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"    ","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"摩羯座","color":"yellow","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"hoverEvent":{"action":"show_text","value":"每当此随从阵亡后，将三张“点缀星云”置入你的手牌，且能量消耗为0。"}},{"text":"发动技能！","color":"white","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"目标：","color":"gray","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"selector":"@e[tag=targetmascot]","color":"yellow","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]
+
+execute if score @s casting matches 10 run scoreboard players set @s casting 5
+tag @e remove summon
+tag @e remove targetmascot
+tag @s remove 123

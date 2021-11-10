@@ -1,0 +1,6 @@
+kill @e[tag=word]
+kill @e[tag=button]
+kill @e[tag=button2]
+kill @e[tag=word2]
+kill @e[tag=system]
+kill @e[tag=deck]

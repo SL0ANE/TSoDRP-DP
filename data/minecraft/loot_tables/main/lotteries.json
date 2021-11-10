@@ -1,0 +1,125 @@
+{
+	"pools": [
+		{
+			"rolls": {
+				"min": 1,
+				"max": 1
+			},
+			"entries": [
+				{
+					"type": "minecraft:group",
+					"children": [
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:blue_dye",
+							"weight": 15,
+							"quality": 0,
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{display:{Name:\"3\"}}"
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:blue_dye",
+							"weight": 2,
+							"quality": 0,
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{display:{Name:\"4\"}}"
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:blue_dye",
+							"weight": 2,
+							"quality": 0,
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{display:{Name:\"5\"}}"
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:blue_dye",
+							"weight": 12,
+							"quality": 0,
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{display:{Name:\"6\"}}"
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:blue_dye",
+							"weight": 12,
+							"quality": 0,
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{display:{Name:\"7\"}}"
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:blue_dye",
+							"weight": 12,
+							"quality": 0,
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{display:{Name:\"8\"}}"
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:blue_dye",
+							"weight": 12,
+							"quality": 0,
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{display:{Name:\"9\"}}"
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:blue_dye",
+							"weight": 25,
+							"quality": 0,
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{display:{Name:\"10\"}}"
+								}
+							]
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:blue_dye",
+							"weight": 6,
+							"quality": 0,
+							"functions": [
+								{
+									"function": "minecraft:set_nbt",
+									"tag": "{display:{Name:\"11\"}}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

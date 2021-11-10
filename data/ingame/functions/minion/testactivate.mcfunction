@@ -1,0 +1,4 @@
+execute as @e[tag=mascot] if score @s ownedby = @a[tag=click,limit=1] playernumber if score @s mana < @e[tag=hit,limit=1] cost run tag @a[tag=click] add nomana
+title @a[tag=click,tag=nomana] title [{"text":"!","color":"red","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"能量不足","color":"yellow","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"!","color":"red","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]
+execute if entity @a[tag=!nomana,tag=click] run scoreboard players set @s entering 10
+execute as @e[tag=mascot] if score @s ownedby = @a[tag=click,limit=1] playernumber if score @s mana >= @e[tag=hit,limit=1] cost run scoreboard players operation @s mana -= @e[tag=hit,limit=1] cost

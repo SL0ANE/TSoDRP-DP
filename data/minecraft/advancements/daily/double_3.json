@@ -1,0 +1,24 @@
+{
+  "parent": "minecraft:daily/double_2",
+  "display": {
+    "icon": {
+      "item": "minecraft:white_dye",
+      "nbt": "{CustomModelData:3}"
+    },
+    "title": {
+      "text":"手气不错III","color":"aqua","bold":"true"
+    },
+    "description": {
+      "text":"在老虎机赢得20次三等奖","color":"white"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "crafting_table": {
+      "trigger": "minecraft:impossible"
+      }
+    }
+}

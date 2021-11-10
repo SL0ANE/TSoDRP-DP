@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:records/20games",
+  "display": {
+    "icon": {
+      "item": "minecraft:white_dye",
+      "nbt": "{CustomModelData:2}"
+    },
+    "title": {
+      "text":"熟能生巧","color":"green","bold":"true"
+    },
+    "description": {
+      "text":"完成50场对局","color":"white"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "crafting_table": {
+      "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function":"rewards:1000gold"
+  
+    }
+}

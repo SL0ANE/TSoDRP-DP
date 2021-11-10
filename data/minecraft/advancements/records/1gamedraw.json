@@ -1,0 +1,24 @@
+{
+  "parent": "minecraft:records/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:white_dye",
+      "nbt": "{CustomModelData:4}"
+    },
+    "title": {
+      "text":"旗鼓相当的对手","color":"blue","bold":"true"
+    },
+    "description": {
+      "text":"以平局完成一场对局","color":"white"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "crafting_table": {
+      "trigger": "minecraft:impossible"
+      }
+    }
+}

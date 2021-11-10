@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:daily/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:white_dye",
+      "nbt": "{CustomModelData:3}"
+    },
+    "title": {
+      "text":"天选之子","color":"red","bold":"true"
+    },
+    "description": {
+      "text":"在老虎机赢得头彩","color":"white"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "crafting_table": {
+      "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function":"slotmachine:jackpot"
+  
+    }
+}

@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:records/10wins",
+  "display": {
+    "icon": {
+      "item": "minecraft:white_dye",
+      "nbt": "{CustomModelData:3}"
+    },
+    "title": {
+      "text":"太简单了","color":"green","bold":"true"
+    },
+    "description": {
+      "text":"赢得20场对局","color":"white"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "crafting_table": {
+      "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function":"rewards:1000gold"
+  
+    }
+}

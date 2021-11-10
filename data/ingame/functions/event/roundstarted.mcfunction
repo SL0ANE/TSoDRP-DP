@@ -1,0 +1,1 @@
+execute if score roundtime system matches 1800..3600 run scoreboard players operation roundtime2 system = roundtime system

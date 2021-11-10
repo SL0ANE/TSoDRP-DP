@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:records/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:white_dye",
+      "nbt": "{CustomModelData:3}"
+    },
+    "title": {
+      "text":"初尝胜果","color":"dark_purple","bold":"true"
+    },
+    "description": {
+      "text":"赢得1场对局","color":"white"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "crafting_table": {
+      "trigger": "minecraft:impossible"
+      }
+    },
+  "rewards": {
+    "function":"rewards:100gold"
+
+  }
+}

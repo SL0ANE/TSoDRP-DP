@@ -1,0 +1,4 @@
+scoreboard players operation @e[tag=234] storedbet *= -1 number
+tellraw @s [{"text":"[金币奖励]  ","color":"#FFF68F","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"系统为你储存的金币已发放。你获得","color":"white","bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false},{"score":{"objective":"storedbet","name":"@e[tag=234]"},"color":"#98FB98","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"金币！","color":"white","bold":false,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false}]
+scoreboard players operation @s money += @e[tag=234] storedbet
+scoreboard players reset @e[tag=234] storedbet

@@ -1,0 +1,3 @@
+summon minecraft:armor_stand ~ ~ ~ {CustomName:"[{\"text\":\"简易火药\",\"color\":\"white\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}]",Tags:["classic","18","card","summon","need_no_target","spell","castwhendrawn","derive"],Invisible:1,DisabledSlots:2039583,Rotation:[0f],Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f],LeftLeg:[0f,0f,0f],RightLeg:[0f,0f,0f]},Small:1b,Marker:1b,CustomNameVisible:0b,ArmorItems:[{},{},{},{id:"minecraft:gray_dye",Count:1b,tag:{CustomModelData:1180}}]}
+scoreboard players remove system runcount 1
+execute if score system runcount matches 1.. run function ingame:handcard/handcasts/potato/9-2

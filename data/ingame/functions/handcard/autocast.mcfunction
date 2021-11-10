@@ -1,0 +1,2 @@
+execute if entity @s[tag=autocast,tag=classic,tag=18] run function ingame:handcard/autocasts/classic/18
+execute if entity @s[tag=autocast,tag=knights,tag=1.1] run function ingame:handcard/autocasts/knights/1.1

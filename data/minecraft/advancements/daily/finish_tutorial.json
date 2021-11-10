@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:daily/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:white_dye",
+      "nbt": "{CustomModelData:3}"
+    },
+    "title": {
+      "text":"第一堂课","color":"white","bold":"true"
+    },
+    "description": {
+      "text":"完成新手教学","color":"white"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "crafting_table": {
+      "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function":"rewards:finish_tutorial"
+  
+    }
+}

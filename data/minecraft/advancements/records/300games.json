@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:records/200games",
+  "display": {
+    "icon": {
+      "item": "minecraft:white_dye",
+      "nbt": "{CustomModelData:2}"
+    },
+    "title": {
+      "text":"我是传奇","color":"red","bold":"true"
+    },
+    "description": {
+      "text":"完成300场对局","color":"white"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "crafting_table": {
+      "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function":"rewards:10000gold"
+  
+    }
+}

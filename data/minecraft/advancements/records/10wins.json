@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:records/1wins",
+  "display": {
+    "icon": {
+      "item": "minecraft:white_dye",
+      "nbt": "{CustomModelData:3}"
+    },
+    "title": {
+      "text":"掌握要领","color":"aqua","bold":"true"
+    },
+    "description": {
+      "text":"赢得10场对局","color":"white"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "crafting_table": {
+      "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function":"rewards:500gold"
+  
+    }
+}

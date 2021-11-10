@@ -1,0 +1,2 @@
+execute if score @s at_dmgtaken matches 1.. run function ingame:event/at_takedamage
+execute unless score @s at_dmgtaken matches 1.. if score @s dmgtaken matches 1.. run function ingame:event/takedamage

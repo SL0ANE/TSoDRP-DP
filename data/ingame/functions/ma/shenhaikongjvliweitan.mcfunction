@@ -1,0 +1,1 @@
+execute if score @s hp > @s basic_hp run scoreboard players operation @s basic_hp = @s hp

@@ -1,0 +1,22 @@
+execute as @e[tag=mascot,tag=onturn,scores={ownedby=2}] unless entity @e[tag=pick] as @e[tag=minion,scores={dmgtaking=10,ownedby=1,minionboard=1},limit=1] run tag @s add pick
+execute as @e[tag=mascot,tag=onturn,scores={ownedby=2}] unless entity @e[tag=pick] as @e[tag=minion,scores={dmgtaking=10,ownedby=2,minionboard=3},limit=1] run tag @s add pick
+execute as @e[tag=mascot,tag=onturn,scores={ownedby=2}] unless entity @e[tag=pick] as @e[tag=minion,scores={dmgtaking=10,ownedby=1,minionboard=2},limit=1] run tag @s add pick
+execute as @e[tag=mascot,tag=onturn,scores={ownedby=2}] unless entity @e[tag=pick] as @e[tag=minion,scores={dmgtaking=10,ownedby=2,minionboard=2},limit=1] run tag @s add pick
+execute as @e[tag=mascot,tag=onturn,scores={ownedby=2}] unless entity @e[tag=pick] as @e[tag=minion,scores={dmgtaking=10,ownedby=1,minionboard=3},limit=1] run tag @s add pick
+execute as @e[tag=mascot,tag=onturn,scores={ownedby=2}] unless entity @e[tag=pick] as @e[tag=minion,scores={dmgtaking=10,ownedby=2,minionboard=1},limit=1] run tag @s add pick
+execute as @e[tag=mascot,tag=onturn,scores={ownedby=2}] unless entity @e[tag=pick] as @e[tag=mascot,scores={dmgtaking=10,ownedby=1},limit=1] run tag @s add pick
+execute as @e[tag=mascot,tag=onturn,scores={ownedby=2}] unless entity @e[tag=pick] as @e[tag=mascot,scores={dmgtaking=10,ownedby=2},limit=1] run tag @s add pick
+
+execute as @e[tag=mascot,tag=onturn,scores={ownedby=1}] unless entity @e[tag=pick] as @e[tag=minion,scores={dmgtaking=10,ownedby=2,minionboard=3},limit=1] run tag @s add pick
+execute as @e[tag=mascot,tag=onturn,scores={ownedby=1}] unless entity @e[tag=pick] as @e[tag=minion,scores={dmgtaking=10,ownedby=1,minionboard=1},limit=1] run tag @s add pick
+execute as @e[tag=mascot,tag=onturn,scores={ownedby=1}] unless entity @e[tag=pick] as @e[tag=minion,scores={dmgtaking=10,ownedby=2,minionboard=2},limit=1] run tag @s add pick
+execute as @e[tag=mascot,tag=onturn,scores={ownedby=1}] unless entity @e[tag=pick] as @e[tag=minion,scores={dmgtaking=10,ownedby=1,minionboard=2},limit=1] run tag @s add pick
+execute as @e[tag=mascot,tag=onturn,scores={ownedby=1}] unless entity @e[tag=pick] as @e[tag=minion,scores={dmgtaking=10,ownedby=2,minionboard=1},limit=1] run tag @s add pick
+execute as @e[tag=mascot,tag=onturn,scores={ownedby=1}] unless entity @e[tag=pick] as @e[tag=minion,scores={dmgtaking=10,ownedby=1,minionboard=3},limit=1] run tag @s add pick
+execute as @e[tag=mascot,tag=onturn,scores={ownedby=1}] unless entity @e[tag=pick] as @e[tag=mascot,scores={dmgtaking=10,ownedby=2},limit=1] run tag @s add pick
+execute as @e[tag=mascot,tag=onturn,scores={ownedby=1}] unless entity @e[tag=pick] as @e[tag=mascot,scores={dmgtaking=10,ownedby=1},limit=1] run tag @s add pick
+
+
+
+scoreboard players set @e[tag=pick] dmgtaking 9
+tag @e remove pick
