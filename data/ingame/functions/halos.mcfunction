@@ -85,7 +85,6 @@ execute as @e[tag=minion] run scoreboard players set @s[scores={cost=..-1}] cost
 tag @e remove activatedhalo
 
 tag @e remove affected_dragon4
-tag @e remove affected_xinran
 tag @e remove affected_paxiweier
 tag @e remove affected_jielante
 tag @e remove affected_jiahelisi

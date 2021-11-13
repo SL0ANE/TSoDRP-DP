@@ -12,7 +12,7 @@ execute as @e[tag=mascot] run scoreboard players operation @s attack += @s haloa
 
 execute as @e[tag=activatedhalo,tag=caster2,tag=yuepunk,tag=4] unless score @s dying matches 1.. at @s run function ingame:handcard/secondcasts/yuepunk/4
 
-execute as @e[tag=activatedhalo,tag=xinran,scores={recover=-1}] at @s run function ingame:ma/xinran
+
 execute as @e[tag=activatedhalo,tag=paxiweier,scores={recover=-1}] at @s run function ingame:ma/paxiweier
 
 

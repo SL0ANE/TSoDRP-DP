@@ -4,7 +4,7 @@ execute unless entity @e[tag=targetplayer] run tag @s add targetplayer
 execute if score @s dying matches 130 run summon minecraft:ender_dragon 67 54 -5 {NoAI:1b,Tags:["dragon","summon"],Silent:1b}
 execute if score @s dying matches 130 at @e[tag=dragon] run playsound minecraft:entity.ender_dragon.growl block @a[tag=ingame] ~ ~ ~ 3 1.3 1
 execute if score @s dying matches 130 at @s run summon minecraft:end_crystal 67 54 -5 {BeamTarget:{},Tags:["ec","summon"]}
-execute if score @s dying matches 130 run summon minecraft:marker 53 27 -5 {Tags:["coord","summon"],Potion:CBC,Age:0,Duration:1000,Radius:0,RadiusOnUse:0,RadiusPerTick:0,Invisible:1b}
+execute if score @s dying matches 130 run summon minecraft:marker 53 27 -4 {Tags:["coord","summon"],Potion:CBC,Age:0,Duration:1000,Radius:0,RadiusOnUse:0,RadiusPerTick:0,Invisible:1b}
 execute if score @s dying matches 130 at @s run scoreboard players operation @e[tag=summon] ownedby = @s ownedby
 execute if score @s dying matches 40..130 store result score y position run data get entity @e[tag=coord,limit=1] Pos[1] 1
 execute if score @s dying matches 45..130 run playsound minecraft:block.conduit.attack.target block @a[tag=ingame] ~ ~ ~ 0.8 2 1

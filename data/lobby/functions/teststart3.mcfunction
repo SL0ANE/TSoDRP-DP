@@ -5,11 +5,8 @@ tag @s remove pass
 
 #随从限制检测
 execute unless score r_minion system matches 1 if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["biexibu"]}}] run tag @s add no_deck
-execute unless score r_minion system matches 1 if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["xinran"]}}] run tag @s add no_deck
-execute unless score r_minion system matches 1 if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["bingfengleisai"]}}] run tag @s add no_deck
-execute unless score r_minion system matches 1 if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["sheshouzuo"]}}] run tag @s add no_deck
+#execute unless score r_minion system matches 1 if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["xinran"]}}] run tag @s add no_deck
 execute unless score r_minion system matches 1 if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["shuangyuzuo"]}}] run tag @s add no_deck
-execute unless score r_minion system matches 1 if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["jinniuzuo"]}}] run tag @s add no_deck
 execute unless score r_minion system matches 1 if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["modeleide"]}}] run tag @s add no_deck
 execute unless score r_minion system matches 1 if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["chuangshizhiling"]}}] run tag @s add no_deck
 #随从限制检测

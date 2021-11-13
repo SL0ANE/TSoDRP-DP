@@ -1,8 +1,8 @@
 tag @s add 713
 
-execute as @s[tag=win] run scoreboard players add @s temp2 30
-execute as @s[tag=draw] run scoreboard players add @s temp2 26
-execute as @s[tag=lose] run scoreboard players add @s temp2 20
+execute as @s[tag=win] run scoreboard players add @s temp2 70
+execute as @s[tag=draw] run scoreboard players add @s temp2 60
+execute as @s[tag=lose] run scoreboard players add @s temp2 50
 
 execute as @s run scoreboard players operation @s temp2 *= system honor
 scoreboard players operation @s temp2 /= 2 number

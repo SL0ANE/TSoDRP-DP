@@ -1,5 +1,5 @@
 execute if score @s cardcasting matches 38 run tag @s add 123
-execute if score @s cardcasting matches 38 run summon minecraft:marker ~ ~1 ~ {Tags:["na","summon","a_prestartround2","knights","9","a_halo"]}
+execute if score @s cardcasting matches 38 run summon minecraft:marker ~ ~1 ~ {Tags:["na","summon","a_preendround2","knights","9","a_halo"]}
 
 execute if score @s cardcasting matches 38 run scoreboard players operation @e[tag=summon] ownedby = @s ownedby
 

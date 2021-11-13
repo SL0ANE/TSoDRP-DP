@@ -8,6 +8,7 @@ execute as @e[tag=minion,tag=end_ability1] run function ingame:event/casted
 
 execute unless score casting pause matches 1.. as @e[tag=akai,scores={casting=6..19}] at @s run function ingame:ma/akai
 execute unless score casting pause matches 1.. as @e[tag=shicheng,scores={casting=6..19}] at @s run function ingame:ma/shicheng
+execute unless score casting pause matches 1.. as @e[tag=xinran,scores={casting=6..19}] at @s run function ingame:ma/xinran
 execute unless score casting pause matches 1.. as @e[tag=jinghe,scores={casting=6..19}] at @s run function ingame:ma/jinghe
 execute unless score casting pause matches 1.. as @e[tag=nie,scores={casting=6..19}] at @s run function ingame:ma/nie
 execute unless score casting pause matches 1.. as @e[tag=yeying,scores={casting=6..19}] at @s run function ingame:ma/yeying
