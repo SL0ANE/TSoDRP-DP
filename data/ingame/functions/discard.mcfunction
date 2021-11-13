@@ -33,3 +33,5 @@ tag @e remove targetdcpile
 tag @e remove targetcards
 tag @s remove 123
 tag @e remove 234
+
+execute if entity @s[tag=derive] run function ingame:burncard_silent

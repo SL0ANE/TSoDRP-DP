@@ -29,8 +29,9 @@ tag @e remove runtarget
 scoreboard players set @e[tag=summon] handorder 0
 execute as @e[tag=summon] run function ingame:cardcost
 execute as @e[tag=summon] run function ingame:carddamage
-execute as @e[tag=summon] run scoreboard players operation @s truecost = @s basic_cost
-execute as @e[tag=summon] run scoreboard players operation @s cost = @s basic_cost
+execute as @e[tag=summon] run scoreboard players operation @s[scores={truedamage=1..}] truedamage = @e[tag=running2,limit=1,scores={truedamage=1..}] truedamage
+execute as @e[tag=summon] run scoreboard players operation @s truecost = @e[tag=running2,limit=1] basic_cost
+execute as @e[tag=summon] run scoreboard players operation @s cost = @e[tag=running2,limit=1] basic_cost
 execute as @e[tag=summon] run function ingame:getcardid
 
 tag @e remove summon

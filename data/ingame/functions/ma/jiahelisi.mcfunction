@@ -3,7 +3,7 @@ execute if score @s casting2 matches 18 as @e[tag=jiahelisi,tag=minioncaster] if
 
 
 execute if score @s casting2 matches 18 if entity @e[tag=pass] run scoreboard players set @s casting2 1
-execute if score @s casting2 matches 18 run summon minecraft:marker ~ ~0.5 ~ {Tags:["caster2","normalcaster2","jiahelisi","minioncaster","summon","a_halo","a_prestartround2"],Potion:CBC,Age:0,Duration:10000,Radius:0,RadiusOnUse:0,RadiusPerTick:0,Invisible:1b}
+execute if score @s casting2 matches 18 run summon minecraft:marker ~ ~0.5 ~ {Tags:["caster2","normalcaster2","jiahelisi","minioncaster","summon","a_halo","a_prestartround2"]}
 execute if score @s casting2 matches 18 run scoreboard players operation @e[tag=summon] minioncode = @s minioncode
 execute if score @s casting2 matches 18 run scoreboard players operation @e[tag=summon] ownedby = @s ownedby
 

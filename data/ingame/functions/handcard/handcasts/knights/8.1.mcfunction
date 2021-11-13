@@ -1,7 +1,7 @@
 execute if score @s cardcasting matches 38 run tag @s add 123
 
 
-execute if score @s cardcasting matches 38 run summon minecraft:marker ~ ~1 ~ {Tags:["na","summon","a_preattack2","knights","8.1"],Potion:CBC,Age:0,Duration:10000,Radius:0,RadiusOnUse:0,RadiusPerTick:0,Invisible:1b}
+execute if score @s cardcasting matches 38 run summon minecraft:marker ~ ~1 ~ {Tags:["na","summon","a_preattack2","knights","8.1"]}
 execute if score @s cardcasting matches 38 run scoreboard players operation @e[tag=summon] minioncode = @e[tag=cardtarget] minioncode
 
 

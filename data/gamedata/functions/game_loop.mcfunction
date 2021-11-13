@@ -25,7 +25,7 @@ execute as @a[x=-204,y=25,z=65,dx=2,dy=0,dz=2,advancements={records/root=false}]
 execute as @e[scores={throwmoney=1..}] at @s run function gamedata:throwmoney
 execute as @e[tag=money,nbt={Age:50s}] run tag @s add pickable
 execute as @e[tag=word,type=area_effect_cloud] run data merge entity @s {Age:1}
-execute as @a at @s run function gamedata:pickupmoney
+execute as @a at @s if data entity @s Inventory[{tag:{Tags:["clear"]}}] run function gamedata:pickupmoney
 execute if score reload system matches 1.. run scoreboard players add reload system 1
 execute if score reload system matches 1.. run function gamedata:reload2
 #execute as @e[tag=packswitch2,name=""] run function lobby:packselected

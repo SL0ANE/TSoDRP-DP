@@ -1,7 +1,4 @@
 
-tag @s add attacked
-
-
 
 scoreboard players set @s dmgdeal 0
 scoreboard players operation @s dmgdeal += @s attack

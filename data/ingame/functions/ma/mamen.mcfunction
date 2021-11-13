@@ -1,7 +1,7 @@
 
 
 execute if score @s casting matches 18 run tag @s add 123
-execute if score @s casting matches 18 if entity @s[tag=!attacked] run execute as @e[tag=minion,scores={recover=-1}] unless score @s ownedby = @e[tag=123,limit=1] ownedby if score @s minionboard = @e[tag=123,limit=1] minionboard run tag @s add target
+execute if score @s casting matches 18 if entity @s[scores={attacked=0}] as @e[tag=minion,scores={recover=-1}] unless score @s ownedby = @e[tag=123,limit=1] ownedby if score @s minionboard = @e[tag=123,limit=1] minionboard run tag @s add target
 execute if score @s casting matches 18 unless entity @e[tag=target] run scoreboard players set @s casting 1
 
 

@@ -1,7 +1,6 @@
 execute as @e[tag=carduser] run tag @s add 593
 
 #execute as @e[tag=mascot] run function ingame:checkhand
-
 execute as @e[tag=beingused,tag=spell,tag=!invalid,tag=!removed] unless score @s handorder matches 1.. unless score @s cardorder matches 1.. at @s run function ingame:discard
 execute as @e[tag=beingused,tag=invalid,tag=!removed] unless score @s handorder matches 1.. unless score @s cardorder matches 1.. at @s run function ingame:discard
 

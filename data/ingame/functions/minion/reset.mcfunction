@@ -10,7 +10,6 @@ scoreboard players operation @s hp = @s basic_hp
 scoreboard players operation @s hplimit = @s basic_hp
 tag @s add character
 tag @s remove mute
-tag @s remove attacked
 tag @s remove casted
 tag @s remove casted2
 tag @s remove aggressive

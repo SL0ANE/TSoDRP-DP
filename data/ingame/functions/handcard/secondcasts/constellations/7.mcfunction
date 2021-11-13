@@ -11,7 +11,7 @@ execute if score @s cardcasting2 matches 18 unless entity @e[tag=discovered] run
 execute if score @s cardcasting2 matches 18 if entity @e[tag=discovered] run function ingame:discover
 
 execute if score @s cardcasting2 matches 18 if entity @e[tag=discovered] run scoreboard players set @e[tag=targetmascot] step 1
-execute if score @s cardcasting2 matches 18 if entity @e[tag=discovered] run summon minecraft:marker ~ ~1 ~ {Tags:["caster2","summon","constellations","7-2"],Potion:CBC,Age:0,Duration:10000,Radius:0,RadiusOnUse:0,RadiusPerTick:0,Invisible:1b}
+execute if score @s cardcasting2 matches 18 if entity @e[tag=discovered] run summon minecraft:marker ~ ~1 ~ {Tags:["caster2","summon","constellations","7-2"]}
 execute if score @s cardcasting2 matches 18 run scoreboard players operation @e[tag=summon] ownedby = @s ownedby
 
 

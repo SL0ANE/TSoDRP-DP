@@ -1,7 +1,7 @@
 
 execute if entity @s[tag=!switcher] run tag @s add switcher
 
-execute unless entity @e[tag=switched] as @e[tag=minion,scores={minionboard=2}] if score @s ownedby = @e[tag=switcher,limit=1] ownedby run tag @s add switched
+execute unless entity @e[tag=switched,scores={switching=3}] as @e[tag=minion,scores={minionboard=2,switching=3}] if score @s ownedby = @e[tag=switcher,limit=1] ownedby run tag @s add switched
 summon minecraft:armor_stand ~ ~ ~ {CustomName:"[{\"text\":\"\",\"color\":\"white\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}]",Tags:["location2"],Invisible:1,Small:1,DisabledSlots:2039583,Rotation:[0f],Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f],LeftLeg:[0f,0f,0f],RightLeg:[0f,0f,0f]},Marker:1b,NoGravity:1b,CustomNameVisible:0b}
 tp @e[tag=location2] @s
 tp @s @e[tag=switched,limit=1]
@@ -18,3 +18,4 @@ scoreboard players operation @e[tag=switcher] minionboard >< @e[tag=switched] mi
 
 
 kill @e[tag=location2]
+

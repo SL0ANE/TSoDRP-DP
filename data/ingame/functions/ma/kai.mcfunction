@@ -10,7 +10,7 @@ execute if score @s casting matches 10 run tag @e[tag=beingused] add invalid
 execute if score @s casting matches 10 run tag @e[tag=beingused] add removed
 execute if score @s casting matches 10 run tag @e[tag=beingused] add removed_by_kai
 execute if score @s casting matches 10 as @e[tag=beingused] run function ingame:removefromgame
-execute if score @s casting matches 10 run summon minecraft:marker ~ ~0.5 ~ {Tags:["caster2","normalcaster2","kai","minioncaster","summon","a_preendround2"],Potion:CBC,Age:0,Duration:10000,Radius:0,RadiusOnUse:0,RadiusPerTick:0,Invisible:1b}
+execute if score @s casting matches 10 run summon minecraft:marker ~ ~0.5 ~ {Tags:["caster2","normalcaster2","kai","minioncaster","summon","a_preendround2"]}
 execute if score @s casting matches 10 run scoreboard players operation @e[tag=summon] ownedby = @e[tag=target] ownedby
 execute if score @s casting matches 10 if entity @e[tag=target] run tag @s add casted2
 execute if score @s casting matches 10 if entity @e[tag=target] as @e[tag=card,scores={cardorder=1}] if score @s ownedby = @e[tag=123,limit=1] ownedby run tag @s add folding

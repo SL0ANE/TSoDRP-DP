@@ -49,9 +49,9 @@ execute if score system gamecd matches 100 run scoreboard players set @e[tag=dcp
 execute if score system gamecd matches 101 as @a[tag=playing,scores={playernumber=1}] at @s run function lobby:readydeck
 execute if score system gamecd matches 101 as @e[tag=deck,tag=ownedby1] at @s run function ingame:shuffle
 execute if score system gamecd matches 101 as @e[tag=deck,tag=ownedby1] at @s run function ingame:setdeck
-execute if score system gamecd matches 101 as @a[tag=playing,scores={playernumber=2}] at @s run function lobby:readydeck
-execute if score system gamecd matches 101 as @e[tag=deck,tag=ownedby2] at @s run function ingame:shuffle
-execute if score system gamecd matches 101 as @e[tag=deck,tag=ownedby2] at @s run function ingame:setdeck
+execute if score system gamecd matches 102 as @a[tag=playing,scores={playernumber=2}] at @s run function lobby:readydeck
+execute if score system gamecd matches 102 as @e[tag=deck,tag=ownedby2] at @s run function ingame:shuffle
+execute if score system gamecd matches 102 as @e[tag=deck,tag=ownedby2] at @s run function ingame:setdeck
 
 
 

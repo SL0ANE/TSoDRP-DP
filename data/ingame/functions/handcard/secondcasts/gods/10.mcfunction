@@ -8,7 +8,7 @@ execute if score @s cardcasting2 matches 18 if entity @e[tag=access] run scorebo
 execute if score @s cardcasting2 matches 18 if entity @e[tag=access] run scoreboard players add @e[tag=pass] attacked 1
 execute if score @s cardcasting2 matches 18 if entity @e[tag=access] run tag @e[tag=pass] add forceattack
 execute if score @s cardcasting2 matches 18 if entity @e[tag=step2access] run scoreboard players set @e[tag=step2access] recover 0
-execute if score @s cardcasting2 matches 18 if entity @e[tag=step2access] run summon minecraft:marker ~ ~1 ~ {Tags:["normalcaster2","caster2","summon","a_subrecover2","gods","10step2"],Potion:CBC,Age:0,Duration:10000,Radius:0,RadiusOnUse:0,RadiusPerTick:0,Invisible:1b}
+execute if score @s cardcasting2 matches 18 if entity @e[tag=step2access] run summon minecraft:marker ~ ~1 ~ {Tags:["normalcaster2","caster2","summon","a_subrecover2","gods","10step2"]}
 execute if score @s cardcasting2 matches 18 run scoreboard players operation @e[tag=summon] minioncode = @e[tag=step2access] minioncode
 execute if score @s cardcasting2 matches 18 run scoreboard players operation @e[tag=summon] targetcode = @e[tag=123] targetcode
 execute if score @s cardcasting2 matches 18 if entity @e[tag=step2access] run kill @s

@@ -150,11 +150,10 @@ execute if entity @s[tag=baosi] run scoreboard players set @s basic_recover 3
 execute if entity @s[tag=baosi] run scoreboard players set @s basic_cost 1
 
 execute if entity @s[tag=modeleide] run scoreboard players set @s basic_attack 6
-execute if entity @s[tag=modeleide] run scoreboard players set @s basic_hp 6
-execute if entity @s[tag=modeleide] run scoreboard players set @s hplimit 6
+execute if entity @s[tag=modeleide] run scoreboard players set @s basic_hp 4
+execute if entity @s[tag=modeleide] run scoreboard players set @s hplimit 4
 execute if entity @s[tag=modeleide] run scoreboard players set @s basic_recover 3
 execute if entity @s[tag=modeleide] run scoreboard players set @s basic_cost 1
-execute if entity @s[tag=modeleide] run scoreboard players set @s stacklimit 16
 
 execute if entity @s[tag=aikete] run scoreboard players set @s basic_attack 6
 execute if entity @s[tag=aikete] run scoreboard players set @s basic_hp 6
@@ -192,9 +191,9 @@ execute if entity @s[tag=shizizuo] run scoreboard players set @s hplimit 7
 execute if entity @s[tag=shizizuo] run scoreboard players set @s basic_recover 3
 execute if entity @s[tag=shizizuo] run scoreboard players set @s basic_cost 1
 
-execute if entity @s[tag=jinniuzuo] run scoreboard players set @s basic_attack 2
-execute if entity @s[tag=jinniuzuo] run scoreboard players set @s basic_hp 6
-execute if entity @s[tag=jinniuzuo] run scoreboard players set @s hplimit 6
+execute if entity @s[tag=jinniuzuo] run scoreboard players set @s basic_attack 4
+execute if entity @s[tag=jinniuzuo] run scoreboard players set @s basic_hp 7
+execute if entity @s[tag=jinniuzuo] run scoreboard players set @s hplimit 7
 execute if entity @s[tag=jinniuzuo] run scoreboard players set @s basic_recover 3
 execute if entity @s[tag=jinniuzuo] run scoreboard players set @s basic_cost 1
 
@@ -264,7 +263,7 @@ execute if entity @s[tag=xiehunsan] run scoreboard players set @s basic_hp 7
 execute if entity @s[tag=xiehunsan] run scoreboard players set @s hplimit 7
 execute if entity @s[tag=xiehunsan] run scoreboard players set @s basic_recover 3
 execute if entity @s[tag=xiehunsan] run scoreboard players set @s basic_cost 1
-execute if entity @s[tag=xiehunsan] run scoreboard players set @s stacklimit 3
+execute if entity @s[tag=xiehunsan] run scoreboard players set @s stacklimit 1
 
 execute if entity @s[tag=maidezhanshi] run scoreboard players set @s basic_attack 3
 execute if entity @s[tag=maidezhanshi] run scoreboard players set @s basic_hp 7
@@ -284,16 +283,16 @@ execute if entity @s[tag=tudouqinwang] run scoreboard players set @s hplimit 8
 execute if entity @s[tag=tudouqinwang] run scoreboard players set @s basic_recover 3
 execute if entity @s[tag=tudouqinwang] run scoreboard players set @s basic_cost 1
 
-execute if entity @s[tag=tameila] run scoreboard players set @s basic_attack 3
+execute if entity @s[tag=tameila] run scoreboard players set @s basic_attack 4
 execute if entity @s[tag=tameila] run scoreboard players set @s basic_hp 7
 execute if entity @s[tag=tameila] run scoreboard players set @s hplimit 7
 execute if entity @s[tag=tameila] run scoreboard players set @s basic_recover 3
 execute if entity @s[tag=tameila] run scoreboard players set @s basic_cost 1
-execute if entity @s[tag=tameila] run scoreboard players set @s stacklimit 3
+execute if entity @s[tag=tameila] run scoreboard players set @s stacklimit 4
 
-execute if entity @s[tag=aisha] run scoreboard players set @s basic_attack 3
-execute if entity @s[tag=aisha] run scoreboard players set @s basic_hp 7
-execute if entity @s[tag=aisha] run scoreboard players set @s hplimit 7
+execute if entity @s[tag=aisha] run scoreboard players set @s basic_attack 2
+execute if entity @s[tag=aisha] run scoreboard players set @s basic_hp 6
+execute if entity @s[tag=aisha] run scoreboard players set @s hplimit 6
 execute if entity @s[tag=aisha] run scoreboard players set @s basic_recover 3
 execute if entity @s[tag=aisha] run scoreboard players set @s basic_cost 1
 

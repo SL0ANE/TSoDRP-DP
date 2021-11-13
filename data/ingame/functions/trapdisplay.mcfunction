@@ -11,12 +11,12 @@ execute if score system arena matches 1 run tp @s[scores={ownedby=2,trapcastorde
 execute if score system arena matches 1 run tp @s[scores={ownedby=2,trapcastorder=2}] 64.7 29.8 -7.45
 execute if score system arena matches 1 run tp @s[scores={ownedby=2,trapcastorder=3}] 64.45 28.5 -7.7
 execute if score system arena matches 1 run tp @s[scores={ownedby=2,trapcastorder=4}] 64.2 29.8 -7.95
-execute if score system arena matches 1 run data merge entity @s[scores={ownedby=2,trapcastorder=1..4}] {Pose:{Head:[0.0f,-135.0f,0.0f]}}
+execute if score system arena matches 1 run data merge entity @s[scores={ownedby=2,trapcastorder=1..4}] {Rotation:[0f,0f],Pose:{Head:[0.0f,-135.0f,0.0f]}}
 execute if score system arena matches 1 run tp @s[scores={ownedby=1,trapcastorder=1}] 70.2 28.5 -1.95
 execute if score system arena matches 1 run tp @s[scores={ownedby=1,trapcastorder=2}] 70.45 29.8 -1.7
 execute if score system arena matches 1 run tp @s[scores={ownedby=1,trapcastorder=3}] 70.7 28.5 -1.45
 execute if score system arena matches 1 run tp @s[scores={ownedby=1,trapcastorder=4}] 70.95 29.8 -1.2
-execute if score system arena matches 1 run data merge entity @s[scores={ownedby=1,trapcastorder=1..4}] {Pose:{Head:[0.0f,45.0f,0.0f]}}
+execute if score system arena matches 1 run data merge entity @s[scores={ownedby=1,trapcastorder=1..4}] {Rotation:[0f,0f],Pose:{Head:[0.0f,45.0f,0.0f]}}
 
 tag @s remove set
 tag @s remove running

@@ -5,9 +5,9 @@ execute if score slotmachine system matches 399 run summon minecraft:armor_stand
 execute if score slotmachine system matches 399 run summon minecraft:armor_stand -210.8 18.7 25.5 {CustomName:"[{\"text\":\"\",\"color\":\"\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}]",Tags:["word2","sm_display","slot2"],Invisible:1,Small:1,DisabledSlots:2039583,Rotation:[0f],Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f],LeftLeg:[0f,0f,0f],RightLeg:[0f,0f,0f]},Marker:1b,Invulnerable:1b,NoGravity:1b,CustomNameVisible:1b}
 execute if score slotmachine system matches 399 run summon minecraft:armor_stand -210.8 18.7 25.1 {CustomName:"[{\"text\":\"\",\"color\":\"\",\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}]",Tags:["word2","sm_display","slot3"],Invisible:1,Small:1,DisabledSlots:2039583,Rotation:[0f],Pose:{Head:[0f,0f,0f],Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f],LeftLeg:[0f,0f,0f],RightLeg:[0f,0f,0f]},Marker:1b,Invulnerable:1b,NoGravity:1b,CustomNameVisible:1b}
 execute if score slotmachine system matches 340..399 as @e[tag=slot1,tag=sm_display] at @s run function lobby:gambles/slotmachine3
-execute if score slotmachine system matches 340 run playsound minecraft:block.bell.use block @a ~ ~ ~ 3 1.8 1
+execute if score slotmachine system matches 340 run playsound minecraft:block.bell.use block @a ~ ~ ~ 3 1.8 0
 execute if score slotmachine system matches 280..399 as @e[tag=slot2,tag=sm_display] at @s run function lobby:gambles/slotmachine3
-execute if score slotmachine system matches 280 run playsound minecraft:block.bell.use block @a ~ ~ ~ 3 1.5 1
+execute if score slotmachine system matches 280 run playsound minecraft:block.bell.use block @a ~ ~ ~ 3 1.5 0
 execute if score slotmachine system matches 260..399 as @e[tag=slot3,tag=sm_display] at @s run function lobby:gambles/slotmachine3
 execute if score slotmachine system matches 259..399 run playsound minecraft:block.dispenser.fail block @a ~ ~ ~ 0.7 1.2 0
 execute if score slotmachine system matches 259 as @e[tag=slot3,tag=sm_display] at @s run function lobby:gambles/slotmachine3
@@ -35,7 +35,7 @@ execute if score slotmachine system matches 212 run playsound minecraft:block.di
 execute if score slotmachine system matches 212 as @e[tag=slot3,tag=sm_display] at @s run function lobby:gambles/slotmachine3
 execute if score slotmachine system matches 200 run playsound minecraft:block.dispenser.fail block @a ~ ~ ~ 0.7 1.2 0
 execute if score slotmachine system matches 200 as @e[tag=slot3,tag=sm_display] at @s run function lobby:gambles/slotmachine3
-execute if score slotmachine system matches 200 run playsound minecraft:block.bell.use block @a ~ ~ ~ 3 1.2 1
+execute if score slotmachine system matches 200 run playsound minecraft:block.bell.use block @a ~ ~ ~ 3 1.2 0
 
 
 execute if score slotmachine system matches 170 run function lobby:gambles/slotmachine4

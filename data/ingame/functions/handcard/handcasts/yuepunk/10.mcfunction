@@ -3,7 +3,7 @@ execute if score @s cardcasting matches 38 as @e[tag=mascot] if score @s ownedby
 execute if score @s cardcasting matches 38 as @e[tag=card,scores={cardorder=1..3}] if score @s ownedby = @e[tag=123,limit=1] ownedby run tag @s add targetcards
 execute if score @s cardcasting matches 38 as @e[tag=card,scores={cardorder=1..3}] if score @s ownedby = @e[tag=123,limit=1] ownedby run tag @s add discovered
 execute if score @s cardcasting matches 38 if entity @e[tag=discovered] run function ingame:discover
-execute if score @s cardcasting matches 38 if entity @e[tag=discovered] run summon minecraft:marker ~ ~1 ~ {Tags:["caster2","summon","yuepunk","10"],Potion:CBC,Age:0,Duration:10000,Radius:0,RadiusOnUse:0,RadiusPerTick:0,Invisible:1b}
+execute if score @s cardcasting matches 38 if entity @e[tag=discovered] run summon minecraft:marker ~ ~1 ~ {Tags:["caster2","summon","yuepunk","10"]}
 
 
 execute if score @s cardcasting matches 38 if entity @e[tag=discovered] run scoreboard players set @e[tag=targetmascot] step 1

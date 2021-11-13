@@ -29,7 +29,6 @@ execute unless score casting pause matches 1.. as @e[tag=aikete,scores={casting=
 execute unless score casting pause matches 1.. as @e[tag=sheshouzuo,scores={casting=6..19}] at @s run function ingame:ma/sheshouzuo
 execute unless score casting pause matches 1.. as @e[tag=mojiezuo,scores={casting=6..19}] at @s run function ingame:ma/mojiezuo
 execute unless score casting pause matches 1.. as @e[tag=shizizuo,scores={casting=6..19}] at @s run function ingame:ma/shizizuo
-execute unless score casting pause matches 1.. as @e[tag=jinniuzuo,scores={casting=6..19}] at @s run function ingame:ma/jinniuzuo
 execute unless score casting pause matches 1.. as @e[tag=shuangzizuo,scores={casting=6..19}] at @s run function ingame:ma/shuangzizuo
 execute unless score casting pause matches 1.. as @e[tag=shuipingzuo,scores={casting=6..19}] at @s run function ingame:ma/shuipingzuo
 execute unless score casting pause matches 1.. as @e[tag=shuangyuzuo,scores={casting=6..19}] at @s run function ingame:ma/shuangyuzuo

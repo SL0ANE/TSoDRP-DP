@@ -5,12 +5,14 @@ execute as @e[tag=caster2,tag=yuepunk,tag=9] at @s run function ingame:handcard/
 execute as @e[tag=caster2,tag=knights,tag=9] at @s run function ingame:handcard/secondcasts/knights/9-2
 execute as @e[tag=caster2,tag=constellations,tag=6] at @s run function ingame:handcard/secondcasts/constellations/6-2
 execute as @e[tag=caster2,tag=gods,tag=2] at @s run function ingame:handcard/secondcasts/gods/2-2
+execute as @e[tag=modeleide,tag=minioncaster] run function ingame:ma/modeleide3
 execute as @e[tag=jiahelisi,tag=minioncaster] run function ingame:ma/jiahelisi3
 execute as @e[tag=!mute,tag=shenhaikongjvliweitan,scores={recover=-1}] at @s run function ingame:ma/shenhaikongjvliweitan
 execute as @e[tag=!mute,tag=asimode,scores={recover=-1}] at @s run function ingame:ma/asimode
 execute as @e[tag=!mute,tag=jielante,scores={recover=-1}] at @s run function ingame:ma/jielante
 execute as @e[tag=!mute,tag=baosi,scores={recover=-1}] at @s run function ingame:ma/baosi2
-execute as @e[tag=modeleide] at @s run function ingame:ma/modeleide3
+execute as @e[tag=!mute,tag=modeleide,scores={recover=-1}] at @s run function ingame:ma/modeleide2
+execute as @e[tag=!mute,tag=jinniuzuo,scores={recover=-1}] at @s run function ingame:ma/jinniuzuo
 execute as @e[tag=!mute,tag=shuangzizuo,scores={recover=-1}] at @s run function ingame:ma/shuangzizuo2
 execute as @e[tag=!mute,tag=tianchengzuo,scores={recover=-1}] at @s run function ingame:ma/tianchengzuo2
 execute as @e[tag=!mute,tag=gaowen,scores={recover=-1}] at @s run function ingame:ma/gaowen2

@@ -124,9 +124,9 @@ execute unless score startround pause matches 1.. as @e[tag=mascot,scores={round
 execute unless score startround pause matches 1.. as @e[tag=mascot,scores={roundstarting=1}] run function ingame:event/roundstarted
 #回合开始
 
-execute unless score switch pause matches 1.. as @e[tag=minion,scores={switching=10}] run function ingame:abilities/preswitch
-execute unless score switch pause matches 1.. as @e[tag=minion,scores={switching=5}] at @s run function ingame:event/switch
-execute unless score switch pause matches 1.. as @e[tag=minion,scores={switching=4}] run function ingame:abilities/subswitch
+execute unless score switch pause matches 1.. as @e[tag=minion,scores={switching=4}] run function ingame:abilities/preswitch
+execute unless score switch pause matches 1.. as @e[tag=minion,tag=switcher,scores={switching=3}] at @s run function ingame:event/switch
+execute unless score switch pause matches 1.. as @e[tag=minion,scores={switching=2}] run function ingame:abilities/subswitch
 execute unless score switch pause matches 1.. as @e[tag=minion,scores={switching=1}] run function ingame:event/switched
 #随从换位
 

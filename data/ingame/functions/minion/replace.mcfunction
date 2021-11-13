@@ -7,7 +7,6 @@ scoreboard players reset @s reducedrecover
 scoreboard players reset @s casting
 scoreboard players reset @s casting2
 scoreboard players reset @s supercasting
-tag @s remove attacked
 tag @s remove mute
 tag @s remove casted
 tag @s remove casted2

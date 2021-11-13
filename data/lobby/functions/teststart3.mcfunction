@@ -5,18 +5,18 @@ tag @s remove pass
 
 #随从限制检测
 execute unless score r_minion system matches 1 if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["biexibu"]}}] run tag @s add no_deck
-execute unless score r_minion system matches 1 if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["xiehunsan"]}}] run tag @s add no_deck
+execute unless score r_minion system matches 1 if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["xinran"]}}] run tag @s add no_deck
+execute unless score r_minion system matches 1 if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["bingfengleisai"]}}] run tag @s add no_deck
+execute unless score r_minion system matches 1 if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["sheshouzuo"]}}] run tag @s add no_deck
+execute unless score r_minion system matches 1 if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["shuangyuzuo"]}}] run tag @s add no_deck
 execute unless score r_minion system matches 1 if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["jinniuzuo"]}}] run tag @s add no_deck
 execute unless score r_minion system matches 1 if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["modeleide"]}}] run tag @s add no_deck
-execute unless score r_minion system matches 1 if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["aisha"]}}] run tag @s add no_deck
-execute unless score r_minion system matches 1 if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["tameila"]}}] run tag @s add no_deck
 execute unless score r_minion system matches 1 if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["chuangshizhiling"]}}] run tag @s add no_deck
 #随从限制检测
 
 
 #卡牌限制检测，禁止
 execute unless score r_card system matches 1 if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["classic","17"]}}] run tag @s add no_deck
-execute unless score r_card system matches 1 if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["gods","2"]}}] run tag @s add no_deck
 
 #卡牌限制检测，禁止
 
@@ -24,6 +24,7 @@ scoreboard players set limit_1_test system 0
 #卡牌限制检测，限一
 execute unless score r_card system matches 1 unless score limit_1_test system matches 2.. store result score limit_1_test system if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["classic","1"]}}]
 execute unless score r_card system matches 1 unless score limit_1_test system matches 2.. store result score limit_1_test system if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["classic","8"]}}]
+execute unless score r_card system matches 1 unless score limit_1_test system matches 2.. store result score limit_1_test system if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["classic","13"]}}]
 execute unless score r_card system matches 1 unless score limit_1_test system matches 2.. store result score limit_1_test system if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["yuepunk","2"]}}]
 execute unless score r_card system matches 1 unless score limit_1_test system matches 2.. store result score limit_1_test system if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["knights","9"]}}]
 execute unless score r_card system matches 1 unless score limit_1_test system matches 2.. store result score limit_1_test system if data entity @s EnderItems.[{Slot:5b}].tag.BlockEntityTag.Items.[{tag:{Tags:["potato","5"]}}]

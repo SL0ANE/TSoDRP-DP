@@ -14,4 +14,4 @@ kill @e[tag=takeback2]
 tag @e remove takeback
 tag @e remove takeback2
 
-execute as @e[tag=123] run data merge entity @s {PickupDelay:32767}
+#execute as @e[tag=123] run data merge entity @s {PickupDelay:32767}

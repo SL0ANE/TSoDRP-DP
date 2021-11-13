@@ -1,2 +1,2 @@
-tag @e remove switched
-tag @e remove switcher
+tag @s remove switched
+tag @s remove switcher

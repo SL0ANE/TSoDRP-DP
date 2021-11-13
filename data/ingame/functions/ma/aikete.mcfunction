@@ -13,7 +13,7 @@ execute if score @s casting matches 10 as @e[tag=deck] if score @s ownedby = @e[
 execute if score @s casting matches 10 run scoreboard players add @e[tag=summon3] dmgtaken 5
 execute if score @s casting matches 10 run particle minecraft:dust 1 0 1 2 ~ ~0.2 ~ 0.2 0.2 0.2 0 30 force
 execute if score @s casting matches 10 run playsound minecraft:block.ender_chest.open block @a[tag=ingame] ~ ~ ~ 3 0.1 1
-execute if score @s casting matches 10 run tellraw @a[tag=ingame] [{"text":"▶▶▶","color":"green","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"    ","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"艾克特","color":"yellow","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"hoverEvent":{"action":"show_text","value":"每当你抽牌时，若你的牌堆数等于0，则改为对你造成5点伤害。"}},{"text":"发动技能！","color":"white","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]
+execute if score @s casting matches 10 run tellraw @a[tag=ingame] [{"text":"▶▶▶","color":"green","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"    ","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"艾克特","color":"yellow","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"hoverEvent":{"action":"show_text","value":"每当你抽牌时，若你的牌堆中没有牌，则改为对你造成5点伤害。"}},{"text":"发动技能！","color":"white","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]
 
 tag @e remove summon3
 tag @e remove target

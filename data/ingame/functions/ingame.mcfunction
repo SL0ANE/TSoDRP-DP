@@ -112,7 +112,8 @@ execute as @e[scores={dmgdealing=1..}] unless score dmgdeal pause matches 1.. ru
 execute unless entity @e[scores={attacking=1..38}] unless score attack pause matches 1.. run function ingame:attackorder
 execute as @e[scores={attacking=1..38}] unless score attack pause matches 1.. run scoreboard players remove @s attacking 1
 #第13级，attacking，随从攻击
-execute as @e[scores={switching=1..}] unless score switch pause matches 1.. run scoreboard players remove @s switching 1
+execute unless entity @e[scores={switching=1..5}] unless score switch pause matches 1.. as @e[tag=minion,scores={switching=8},limit=2,sort=random] run scoreboard players set @s switching 5
+execute as @e[scores={switching=1..5}] unless score switch pause matches 1.. run scoreboard players remove @s switching 1
 #第14级，switching，随从换位
 execute unless entity @e[scores={drawing=1..20}] unless score draw pause matches 1.. run function ingame:draworder
 execute as @e[scores={drawing=1..20}] unless score draw pause matches 1.. run scoreboard players remove @s drawing 1

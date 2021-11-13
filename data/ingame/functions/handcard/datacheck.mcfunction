@@ -13,8 +13,8 @@ execute if entity @s[tag=equipment] run data modify storage minecraft:card_tags 
 
 tellraw @a[tag=click] [{"text":"       ","color":"green","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"标签：","color":"white","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"nbt":"List[0]","color":"white","storage":"minecraft:card_tags"},{"nbt":"List[1]","color":"white","storage":"minecraft:card_tags"},{"nbt":"List[2]","color":"white","storage":"minecraft:card_tags"},{"nbt":"List[3]","color":"white","storage":"minecraft:card_tags"},{"nbt":"List[4]","color":"white","storage":"minecraft:card_tags"}]
 
-
 tellraw @a[tag=click] [{"text":"       ","color":"green","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"能量消耗：","color":"white","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"score":{"objective":"truecost","name":"@s"},"color":"aqua","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]
+execute if score @s truedamage matches 1.. run tellraw @a[tag=click] [{"text":"       ","color":"green","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"卡牌伤害：","color":"white","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"score":{"objective":"truedamage","name":"@s"},"color":"green","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]
 function ingame:handcard/datacheck2
 
 tellraw @a[tag=click] [{"text":"—————————————[卡牌信息]—————————————","color":"green","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]

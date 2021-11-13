@@ -5,7 +5,8 @@ execute if score @s cardcasting matches 38 as @e[tag=!cardtarget,tag=minion] if 
 execute if score @s cardcasting matches 38 as @e[tag=targets1,limit=1,sort=random] run tag @s add target1
 execute if score @s cardcasting matches 38 if entity @e[tag=target1] as @e[tag=!cardtarget,tag=minion,tag=!target1] if score @s ownedby = @e[tag=cardtarget,limit=1] ownedby run tag @s add targets2
 execute if score @s cardcasting matches 38 as @e[tag=targets2,limit=1,sort=random] run tag @s add target2
-execute if score @s cardcasting matches 38 if entity @e[tag=target2] run scoreboard players set @e[tag=target1] switching 10
+execute if score @s cardcasting matches 38 if entity @e[tag=target2] run scoreboard players set @e[tag=target1] switching 8
+execute if score @s cardcasting matches 38 if entity @e[tag=target2] run scoreboard players set @e[tag=target2] switching 8
 execute if score @s cardcasting matches 38 if entity @e[tag=target2] run tag @e[tag=target1] add switcher
 execute if score @s cardcasting matches 38 if entity @e[tag=target2] run tag @e[tag=target2] add switched
 

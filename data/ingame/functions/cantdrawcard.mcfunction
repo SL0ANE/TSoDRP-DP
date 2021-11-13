@@ -7,7 +7,7 @@ execute unless entity @e[tag=drawn] run tag @e[tag=card,scores={cardorder=1},tag
 
 
 tellraw @a[tag=ingame] [{"text":"▶▶▶","color":"dark_aqua","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"    ","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"selector":"@s","color":"yellow","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"无法获得更多手牌！","color":"white","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]
-execute as @e[tag=drawn] run function ingame:extractdeck
+execute as @e[tag=drawn] run function ingame:burncard
 
 scoreboard players set @s drawing 7
 

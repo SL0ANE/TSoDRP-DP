@@ -1,6 +1,6 @@
 execute if score @s cardcasting matches 38 run tag @s add 123
 execute if score @s cardcasting matches 38 as @e[tag=mascot] if score @s ownedby = @e[tag=123,limit=1] ownedby run tag @s add targetmascot
-execute if score @s cardcasting matches 38 run summon minecraft:marker ~ ~1 ~ {Tags:["na3","na","summon","a_subendround2","a_healmultiplier2","classic","15"],Potion:CBC,Age:0,Duration:10000,Radius:0,RadiusOnUse:0,RadiusPerTick:0,Invisible:1b}
+execute if score @s cardcasting matches 38 run summon minecraft:marker ~ ~1 ~ {Tags:["na3","na","summon","a_subendround2","a_healmultiplier2","classic","15"]}
 
 execute if score @s cardcasting matches 38 run scoreboard players operation @e[tag=summon] ownedby = @s ownedby
 
